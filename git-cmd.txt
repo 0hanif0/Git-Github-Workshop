@@ -42,4 +42,6 @@ git checkout master
 git merge kelassir-v2
 git branch
 
+git push
+
 git clone https://github.com/0hanif0/Git-Github-Workshop.git
