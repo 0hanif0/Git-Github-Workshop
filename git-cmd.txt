@@ -1,0 +1,43 @@
+git --version
+mkdir kelassir
+cd kelassir
+start .
+
+git init
+git config --global user.name "name"
+git config --global user.email "email"
+
+git status
+touch README.md
+git add .
+git commit -m "First commit"
+
+git help --all
+git config -help
+git commit -help
+
+git branch
+git branch kelassir-v1
+git branch
+git branch kelassir-v3
+git branch
+git checkout kelassir-v1
+mkdir version1
+touch version1/README.md
+git add .
+git commit -m "commit v1"
+git checkout kelassir-v3
+mkdir version3
+touch version3/README.md
+git add .
+git commit -m "commit v3"
+git checkout master
+git status
+git branch
+git branch -D version3
+git branch
+git checkout -b kelassir-v2
+
+git checkout master
+git merge kelassir-v2
+git branch
